@@ -33,8 +33,9 @@ td#tbl_compe_case{
 }
 
 table#tbl_compe{
+  color: red;
   padding: 10px;
-  border: 2px solid pink;
+  border: 2px solid royalblue;
   border-radius: 5px;
   text-align: center;
 }
