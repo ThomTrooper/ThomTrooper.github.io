@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png">
+    <title>Editeur MarkDown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contenu">
+
+        <div class="editeur">
+            <h2>Saisie</h2>
+            <textarea id="saisie" placeholder="Écrivez votre texte en Markdown ici"></textarea>
+        </div>
+
+        <div class="vision"> 
+            <h2>Rendu<button id="download" onclick="enregister()">Download</buttton></h2>
+            <div id="rendu"></div>
+        </div>
+
+    </div>
+
+    <script src="convertisseur.js"></script>
+
+    <script type="text/javascript">
+        function enregister() {
+            var contenu = document.getElementById('rendu').innerHTML;
+            var docRendu = window.open('', '');
+            docRendu.document.write('<html> <head> <title> &nbsp </title> <style> h1{text-align: center;} blockquote{border-left: 5px solid #5865F2; padding-left: 5px; background-color: #585bf279;} </style> </head>');
+            docRendu.document.write('<body>');
+            docRendu.document.write(contenu);
+            docRendu.document.write('<footer> &nbsp </footer> </body> </html>');
+            docRendu.document.close();
+            docRendu.print();
+        }
+    </script>
+
+</body>
+
+</html>
