@@ -14,10 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Saut de ligne
         texte = texte.replace(/\n$/gim, '<br/>');
+     
+        // Souligné  
+        texte = texte.replace(/\_\_(.*)\_\_/gm, '<span style="text-decoration: underline;">$1</span>');
 
         // Gras
         texte = texte.replace(/\*\*(.*)\*\*/gim, '<b>$1</b>');
-        texte = texte.replace(/__(.*)__/gim, '<b>$1</b>');
+        texte = texte.replace(/___(.*)___/gim, '<b>$1</b>');
 
         // Italique
         texte = texte.replace(/\*(.*)\*/gim, '<i>$1</i>');
