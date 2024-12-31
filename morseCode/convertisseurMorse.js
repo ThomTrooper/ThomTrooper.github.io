@@ -1,5 +1,4 @@
 import { alphabet, reverseAlphabet } from "./dictionnaire.js";
-console.log(reverseAlphabet);
 
 document.addEventListener('DOMContentLoaded', () => {
   const htmlInput = document.getElementById('saisie');
