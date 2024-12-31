@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png">
+    <title>Morse code converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="contenu">
+        <div class="editeur">
+            <h2>Input</h2>
+            <textarea id="saisie" placeholder="Write your text in Latin alphabet here"></textarea>
+        </div>
+
+        <div class="vision"> 
+            <h2>Output</h2>
+            <div id="rendu"></div>
+        </div>
+
+        <button id="toggle">Morse -> Latin</button>
+    </div>
+
+    <script type="module" src="convertisseurMorse.js"></script>
+
+    <script type="text/javascript">
+        function enregister() {
+            var contenu = document.getElementById('rendu').innerHTML;
+            var docRendu = window.open('', '');
+            docRendu.document.write('<head> <title> &nbsp </title> <style> h1{text-align: center;} blockquote{border-left: 5px solid #5865F2; padding-left: 5px; background-color: #585bf279;} </style> </head>');
+            docRendu.document.write('<div>');
+            docRendu.document.write(contenu);
+            docRendu.document.write('<footer> &nbsp </footer> </div>');
+            docRendu.document.close();
+            docRendu.print();
+        }
+    </script>
+</body>
+</html>
