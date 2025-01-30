@@ -1,17 +1,91 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ThomTrooper Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>My portfolio coming soon !</h1>
-    <a href="editeurMD/index.html">Markdown Editor</a> <br/>
-    <a href="morseCode/index.html">Morse code converter</a> <br/>
+    <section class="profil">
+        <img src="photo.png" alt="Picture" id="profilPicture"/>
+        <h3 id="name">ThomTrooper - Computer science student</h3>
+        
+        <div class="contact">
+            <p>Contact me : <br/> email at mail dot com</p>
+        </div>
+    </section>
+
+    <div class="globalSkill">
+
+        <div>
+            <h2>Development skills:</h2>
+            <section class="skillInfo">
+                <ul>
+                    <li>Front-end</li>
+                    <li>Java</li>
+                    <li>SQL : MySQL & PostgreSQL</li>
+                </ul>
+                <ul>
+                    <li>Bash</li>
+                    <li>PHP</li>
+                    <li>C</li>
+                </ul>
+                <ul>
+                    <li>Python</li>
+                    <li>Haskell</li>
+                </ul>
+            </section>
+        </div>
+
+        <br/>
+        
+        <div>
+            <h2>Tools:</h2>
+            <section class="tools">
+                <ul>
+                    <li>Visual Studio Code </li>
+                    <li>Processing</li>
+                    <li>JetBrains Tools</li>
+                </ul>
+                <ul>
+                    <li>Pandoc </li>
+                    <li>Markdown</li>
+                    <li>LaTeX </li>
+                </ul>
+                <ul>
+                    <li>Windows</li>
+                    <li>Linux</li>
+                </ul>
+            </section>
+        </div>
+
+        <div>
+            <h2>Langage skills:</h2>
+            <section class="skillLanguage">
+                <ul>
+                    <li>French (native)</li>
+                    <li>English</li>
+                    <li>Spanish</li>
+                </ul>
+            </section>
+        </div>
+    </div> 
+
+    <section class="project">
+        <h2>Projects:</h2>
+        <div class="project_list">
+            <ul>
+                <li>Markdown Editor <a href="/editeurMD/" target="_blank"><button>check</button></a></li>
+
+            </ul>
+            <ul>
+                <li>Morse Editor <a href="/morseCode/" target="_blank"><button>check</button></a></li>
+            </ul>
+        </div>
+    </section>
 </body>
 
 </html>
