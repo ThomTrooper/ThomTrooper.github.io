@@ -1,0 +1,202 @@
+/* ======================= Global Styles =======================*/
+:root{
+    --first-color-border: #8D98F9;
+    --second-color-border: #6e7cf5;
+    --third-color-border: #4f60f5;
+    --fourth-color-border: #273cf8;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li:hover {
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+}
+
+@keyframes borderColorChange {    
+    0%, 100% { border-color: var(--first-color-border); }
+    25% { border-color: var(--second-color-border); }
+    50% { border-color: var(--third-color-border); }
+    75% { border-color: var(--fourth-color-border); }    
+}
+.globalSkill, .project{
+    animation: borderColorChange 4s infinite alternate;
+}
+
+/* ======================= Animation =======================*/
+@keyframes projection {
+    0% {
+        transform: rotate(0) scale(1);
+    }
+    100% {
+        transform: rotate(360deg) scale(0.1);
+    }
+}
+
+#profilPicture {
+    animation: projection 0.6s reverse;
+}
+
+#profilPicture:hover {
+    animation: projection 0.6s reverse;
+}
+
+/* ======================= Profile =======================*/
+.profil {
+    text-align: center;
+    margin: 5% auto;
+    width: 80%;
+    max-width: 300px;
+}
+
+#profilPicture {
+    border-radius: 50%;
+    width: 90%;
+    max-width: 200px;
+    margin: 1% auto;
+}
+
+#name {
+    border: solid white;
+    padding: 1.5%;
+    background: linear-gradient(to left top, #3BD65C, #3B57D6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 10px;
+}
+
+/* ======================= Skills =======================*/
+.globalSkill {
+    border: solid #8D98F9;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.skillInfo, .tools, .skillLanguage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+h2 {
+    text-indent: 10px;
+    margin-bottom: 10px;
+}
+
+li {
+    list-style-type: "↪ ";
+    margin-left: 20px;
+}
+
+/* ======================= Projects =======================*/
+.project {
+    border: solid #8D98F9;
+    font-size: 18px;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.project_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+button {
+    border-radius: 50px;
+    width: auto;
+    padding: 5px 15px;
+    background: linear-gradient(to right top, #DE8DF9, #8DEFF9);
+    border: none;
+    color: black;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* ======================= Contact Section =======================*/
+.contact {
+    border: solid white;
+    border-top: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+}
+
+
+/* ======================= Responsive Design =======================*/
+@media screen and (max-width: 767px) {
+    .globalSkill, .project {
+        width: 95%;
+    }
+    
+    .project_list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1073px) {
+    .globalSkill, .project {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1074px) {
+    .profil {
+        float: left;
+        width: 20%;
+        margin-left: 5%;
+    }
+    
+    .globalSkill {
+        width: 60%;
+        margin-left: 30%;
+    }
+
+    .project {
+        width: 60%;
+        margin-left: 30%;
+    }
+}
+
+@media screen and (min-width: 1900px){
+    .profil{
+        float : left;
+        width: 20%;
+        margin-left: 20%;
+    }
+
+    .globalSkill{
+        width: 60%;
+        margin-left: 40%;
+        margin-top: 6%;
+    }
+
+    .project{
+        width: 60%;
+        margin-left: 40%;
+    }
+}
