@@ -67,7 +67,7 @@ body, html {
 
 /* IMAGE EN ARRIÈRE-PLAN */
 #lastArticle {
-    background-image: url("../Ressources/image.png");
+    background-image: url("Ressources/image.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -129,7 +129,7 @@ body, html {
     text-decoration: underline;
 }
 
-/* scrollbar */
+/* SCROLLBAR */
 #divArticle::-webkit-scrollbar {
     width: 10px;
 }
@@ -144,7 +144,7 @@ body, html {
     border: 2px solid #2c3138;
 }
 
-/* fotter */
+/* FOOTER */
 .basPage {
     display: flex;
     justify-content: center;
