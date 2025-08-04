@@ -142,11 +142,11 @@ footer a:hover {
 
 .corpsArticle{
     line-height: 1.5;
-    max-width: 800px;
-    margin: 40px auto;
+    max-width: 700px;
+    margin: 30px auto;
     border: 2px solid #4c9aff;
     border-radius: 10px;
-    padding: 20px 30px;
+    padding: 15px 25px;
     background-color: #3a4149;
     box-shadow: 0 4px 12px rgba(76, 154, 255, 0.5);
 }
