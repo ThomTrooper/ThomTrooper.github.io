@@ -23,11 +23,6 @@ body, html {
     filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.1));
 }
 
-#theme:active {
-    background-color: #4a525a;
-    transform: translateY(2px);
-}
-
 /* contenu */
 #contenu {
     display: flex;
@@ -65,10 +60,12 @@ body, html {
 /* listes des articles */
 #listeArticle {
     list-style-type: none;
+    font-size: 18px;
 }
 
 #listeArticle li {
-    border-top: 1px solid #3a4149;
+    border-top: 3px solid #0651a7;
+    border-radius: 5px;
     margin-right: 10%;
     margin-top: 5%;
     padding-top: 1%;
@@ -83,6 +80,12 @@ body, html {
 #listeArticle li a:hover {
     color: #4c9aff;
     text-decoration: underline;
+}
+
+.liensArticles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* scrollbar */
