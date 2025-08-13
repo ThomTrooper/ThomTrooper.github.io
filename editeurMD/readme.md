@@ -9,20 +9,17 @@ Markdown editor that can be modified to add extra features, such as colored text
 - Italic: `*italic text*` or `_italic text_`.
 
 - Underline: `__underlined text__`.
+
 - Unchecked list : `[] Unchecked` or `[ ] Unchecked`.
 
 - Checked list: `[X] Checked`
 
 - Set color: `\c[rgb(X, X, X)] text color \c` or `\c[#HEXA] text color \c` or `\c[ColorName] text color \c`
 
-
 ## Roadmap
 
-- Clear theme 🔜
 - Choice of language 🔜
 - Table 🔜
-- Code block 🔜
-- Download MarkDown file 🔜
 
 ## Show your support:
 If this project has helped you feel free to ⭐️! :D
@@ -41,6 +38,7 @@ If this project has helped you feel free to ⭐️! :D
 - Italique : `*texte en italique*` ou `_texte en italique_`
 
 - Soulignement : `__texte souligné__`
+- 
 - Liste non coché : `[] Non coché` ou `[ ] Non coché`
 
 - Liste coché : `[X] Coché`
@@ -50,11 +48,8 @@ If this project has helped you feel free to ⭐️! :D
 
 ## Feuille de route
 
-- Thème clair 🔜
 - Choix de langue 🔜
 - Tableau 🔜
-- Bloc de code 🔜
-- Télécharger le fichier MarkDown 🔜
 
 ## Montrez votre soutien :
 Si ce projet vous a aidé n'hésitez pas à ⭐️ ! :D
