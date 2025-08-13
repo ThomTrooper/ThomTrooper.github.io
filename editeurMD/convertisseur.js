@@ -12,12 +12,27 @@ document.addEventListener('DOMContentLoaded', () => {
         texte = texte.replace(/^##### (.*$)/gim, '<h5>$1</h5>');
         texte = texte.replace(/^###### (.*$)/gim, '<h6>$1</h6>');
 
+        // Bloc de code
+        /*        
+        NB : Le code pour le bloc de code est mis ici afin d'éviter d'avoir des problèmes avec les saut de ligne
+        au sein même du bloc de code, et également afin d'éviter des comportements anormaux en rapport avec le télétype
+        */
+        texte = texte.replace(/```([\s\S]*?)```/g, (_, code) => {
+        const escaped = code.replace(/&/g, '&amp;')
+                            .replace(/</g, '&lt;')
+                            .replace(/>/g, '&gt;');
+        return `<pre><code>${escaped}</code></pre>`;
+        });
+
         // Saut de ligne
         texte = texte.replace(/\n$/gim, '<br/>');
-     
+
+        // Télétype
+        texte = texte.replace(/`(.*)`/gim, '<tt>$1</tt>');
+
         // Souligné  
         texte = texte.replace(/\_\_(.*)\_\_/gm, '<span style="text-decoration: underline;">$1</span>');
-
+    
         // Gras
         texte = texte.replace(/\*\*(.*)\*\*/gim, '<b>$1</b>');
         texte = texte.replace(/___(.*)___/gim, '<b>$1</b>');
@@ -27,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
         texte = texte.replace(/_(.*)_/gim, '<i>$1</i>');
 
         // Bloc de citation
-
         texte = texte.replace(/^\> (.*$)/gim, '<blockquote>$1</blockquote>');
 
         // Trait horizontal
@@ -40,14 +54,13 @@ document.addEventListener('DOMContentLoaded', () => {
         texte = texte.replace(/^\s*[+] (.*$)/gim, '<ol><li>$1</li></ol>').replace(/<\/ol>\n?<ol>/g, '');
 
         // Convertion de liens
+        // [texte](lien)
         texte = texte.replace(/\[([^\[\]]+)\]\((?!.*\.(?:png|jpg|gif|jpeg))([^\)]+)\)/gim, '<a href="$2">$1</a>');
 
         // Convertion d'images
+        // ![alt](src)
         texte = texte.replace(/\!\[([^\[\]]+)\]\((.*?)\)/gim, '<img alt="$1" src="$2"/>');
-
-        // Télétype
-        texte = texte.replace(/`(.*)`/gim, '<tt>$1</tt>');
-
+        
         // Liste à coche (non coché)
         texte = texte.replace(/^\[\] (.*$)/gim, '<input type="checkbox"/>$1'); // Sans espace au centre
 
@@ -57,6 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
         texte = texte.replace(/^\[\X\] (.*$)/gim, '<input type="checkbox" checked/>$1');
         
         // Couleur texte
+        /* 
+        \c[color] texte \c
+        "color" fait référence à une couleur direct (red, blue, white, green...)
+        Peut également être remplacer par un hexadécimal ou rgb(X, X, X)
+        */
         texte = texte.replace(/\\c\[(.*)\] (.*) \\c /gim, '<span style="color:$1;">$2 </span>');
         
         return texte.trim();
