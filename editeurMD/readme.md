@@ -1,55 +1,62 @@
-## Description
+# Markdown Editor with Extra Features
+A Markdown editor that supports enhanced features like colored text, and allows you to write and download your own documents easily.
 
-Markdown editor that can be modified to add extra features, such as colored text, this site will allow you to write and upload your own documents.
-
-## Usage
+## 🚀 Feature
 
 - Bold: `**bold text**` or `___bold text___`.
 
 - Italic: `*italic text*` or `_italic text_`.
 
 - Underline: `__underlined text__`.
-
 - Unchecked list : `[] Unchecked` or `[ ] Unchecked`.
 
 - Checked list: `[X] Checked`
 
 - Set color: `\c[rgb(X, X, X)] text color \c` or `\c[#HEXA] text color \c` or `\c[ColorName] text color \c`
 
-## Roadmap
+- Teletype: A backtick (`) around the text
+
+- Code block: Three backticks (`) around the code
+
+## 📍 Roadmap
 
 - Choice of language 🔜
-- Table 🔜
+- Table 🔜 
+- Local desktop version 🔜
 
-## Show your support:
-If this project has helped you feel free to ⭐️! :D
+## 🙌 Show your support
+If you liked this project, please consider leaving a ⭐️ - it really helps! :D
 
 ---
 ---
 
-## Description
+# 🥖 Version Française
+# Éditeur Markdown avec fonctionnalités supplémentaires
+Un éditeur Markdown qui prend en charge des fonctionnalités avancées telles que le texte en couleur et vous permet de rédiger et de télécharger facilement vos propres documents.
 
-Éditeur markdown quelque peut modifier pour rajouter des fonctionnalitées supplémentaire, tel que du texte en couleur, ce site vous permettras d'écrire et de télécharger votre propre document.
-
-## Utilisation
+## 🚀 Fonctionnalité
 
 - Gras : `**texte en gras**` ou `___texte en gras___`
 
 - Italique : `*texte en italique*` ou `_texte en italique_`
 
 - Soulignement : `__texte souligné__`
-- 
 - Liste non coché : `[] Non coché` ou `[ ] Non coché`
 
 - Liste coché : `[X] Coché`
 
 - Mettre de la couleur : `\c[rgb(X, X, X)] texte en couleur \c` ou `\c[#HEXA] texte en couleur \c` ou encore `\c[nomCouleur] texte en couleur \c`
 
+- Télétype : Une backtick (`) autour du texte
 
-## Feuille de route
+- Bloc de code : Trois backtick (`) autour du code
+
+
+## 📍 Feuille de route
 
 - Choix de langue 🔜
 - Tableau 🔜
+- Version bureautique local 🔜
 
-## Montrez votre soutien :
-Si ce projet vous a aidé n'hésitez pas à ⭐️ ! :D
+## 🙌 Montrez votre soutien
+Si ce projet vous a plu, pensez à laisser une ⭐️ - ça fait toujours plaisir ! :D
