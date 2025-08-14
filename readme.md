@@ -15,7 +15,7 @@ All in **HTML / CSS / JavaScript**, without a framework, 100% handmade. 🛠️
 ```
 ├── Articles/           # Blog articles
 ├── Portfolio/          # Digital resume
-├── Resources/         # Miscellaneous files (including images)
+├── Resources/          # Miscellaneous files (including images)
 ├── editeurMD/          # My Markdown editor
 ├── morseCode/          # JS Morse translator
 ├── index.html          # Main page
@@ -26,7 +26,7 @@ All in **HTML / CSS / JavaScript**, without a framework, 100% handmade. 🛠️
 ## ❗ About
 
 > If you find this project useful or interesting, feel free to give it a ⭐!
-> [Issues](https://github.com/ThomTrooper/ThomTrooper.github.io/issues) open for feedback, suggestions, or bugs.
+[Issues](https://github.com/ThomTrooper/ThomTrooper.github.io/issues) open for feedback, suggestions, or bugs.
 
 ---
 ---
@@ -60,4 +60,4 @@ Bienvenue sur mon site personnel propulsé par GitHub Pages. Un espace unique o�
 ## ❗ À propos
 
 > Si tu trouves ce projet utile ou intéressant, n’hésite pas à laisser une ⭐ !
-> [Issues](https://github.com/ThomTrooper/ThomTrooper.github.io/issues) ouvertes aux retours, suggestions ou bugs.
+[Issues](https://github.com/ThomTrooper/ThomTrooper.github.io/issues) ouvertes aux retours, suggestions ou bugs.
