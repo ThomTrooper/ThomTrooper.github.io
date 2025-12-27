@@ -1,45 +1,90 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlogTrooper</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
-
-    <header class="hautPage">
-        <img id="centrerLogo" alt="logo" src="Ressources/logo.png">
-    </header>
-
-    <div id="contenu">
-
-        <div id="lastArticle">
-            <div id="lastTxt">
-        <h3>Mon_super_editeur_markdown</h3>
-        <p><h1>Pourquoi j'ai créer mon propre <a href="https://thomtrooper.github.io/editeurMD">éditeur Markdown</a></h1><br> <h2>Le contexte :</h2> J'utilise <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> pour <b>tout</b> : notes de cours, CDC de projet perso, et même pour écrire les articles de ce blog (j'en reparlerai dans un autre article). J'étais curieux des éditeurs existants : Comment fonctionnent-ils ?<br><br> J'ai pas cherché sur internet comment ça fonctionnait, j'ai directement pris une feuille et un stylo et j'ai composé des regex : pour moi ça fonctionnait comme ça, peu importe que ce soit ou non la réalité.<br><br> J'avais un souci : Je ne savais pas trop quelle techno utiliser pour créer un logiciel. J’ai pris le parti de la simplicité et je me suis rabattu sur une page web. Pourquoi ne pas tout faire avec des technos web vanilla ?<br>[...]</p>
-        <a href="Articles/mon_super_editeur_markdown.html">Lire la suite</a>
-        </div>
-        </div>
-
+    <section class="profil">
+        <img src="photo.png" alt="Picture" id="profilPicture"/>
+        <h3 id="name">ThomTrooper - Computer science student</h3>
         
-        <div id="divArticle">
-            <ul id="listeArticle">
-<li><a href="Articles/mon_super_editeur_markdown.html" class="liensArticles">Mon_super_editeur_markdown</a></li>
-<li><a href="Articles/lancement_blog.html" class="liensArticles">Lancement_blog</a></li>
-</ul>
+        <div class="contact">
+            <p>Contact me on discord : <br/> @thomtrooper </p>
         </div>
-     
-    </div>
+    </section>
 
-    <footer class="basPage">
-        <a href="https://thomtrooper.github.io/Portfolio/index.html" target="_blank">thomtrooper.github.io/Portfolio/</a>
-    </footer>
+    <div class="globalSkill">
 
+        <div>
+            <h2>Development skills:</h2>
+            <section class="skillInfo">
+                <ul>
+                    <li>Front-end (Vanilla)</li>
+                    <li>Java</li>
+                    <li>SQL : MySQL & PostgreSQL</li>
+                </ul>
+                <ul>
+                    <li>Bash</li>
+                    <li>PHP</li>
+                    <li>C</li>
+                </ul>
+                <ul>
+                    <li>Python</li>
+                    <li>Haskell</li>
+                </ul>
+            </section>
+        </div>
+
+        <br/>
+        
+        <div>
+            <h2>Tools:</h2>
+            <section class="tools">
+                <ul>
+                    <li>Visual Studio Code </li>
+                    <li>Processing</li>
+                    <li>JetBrains Tools</li>
+                </ul>
+                <ul>
+                    <li>Pandoc </li>
+                    <li>Markdown</li>
+                    <li>LaTeX </li>
+                </ul>
+                <ul>
+                    <li>Windows</li>
+                    <li>Linux</li>
+                </ul>
+            </section>
+        </div>
+
+        <div>
+            <h2>Langage skills:</h2>
+            <section class="skillLanguage">
+                <ul>
+                    <li>French (native)</li>
+                    <li>English (B2)</li>
+                    <li>Spanish (B2)</li>
+                </ul>
+            </section>
+        </div>
+    </div> 
+
+    <section class="project">
+        <h2>Projects:</h2>
+        <div class="project_list">
+            <ul>
+                <li>Markdown Editor <a href="../editeurMD/" target="_blank"><button>check</button></a></li>
+                <li>Blog <a href="../index.html" targer="_blank"><button>check</button></a></li>
+            </ul>
+            <ul>
+                <li>Morse Editor <a href="../morseCode/" target="_blank"><button>check</button></a></li>
+            </ul>
+        </div>
+    </section>
 </body>
-
 </html>
-
-
